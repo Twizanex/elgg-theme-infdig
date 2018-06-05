@@ -34,9 +34,9 @@ $body = elgg_view("assets/images/logo.png", $params);
 echo elgg_view_image_block($image,$body, array());
 */
 //echo elgg_echo("<img src='{$vars['url']}mod/socia_bootstrap_theme/assets/images/headerImage.png' />");
-echo elgg_echo("<img src='{$vars['url']}mod/socia_bootstrap_theme/assets/images/infanziaLogo.png' />");
-echo elgg_echo("<h2 style='position:center;color:#CC1962'>Accedi</h2>");
-echo elgg_echo("<span style='color:#063A54;'>Inserisci le tue credenziali per effettuare l'accesso</span>");
+//echo elgg_echo("<img src='{$vars['url']}mod/socia_bootstrap_theme/assets/images/infanziaLogo.png' />");
+echo elgg_echo("<h2 style='font-family:Lato, Black;text-align:center;font-size:24px;color:#CC1962;'>Accedi</h2>");
+echo elgg_echo("<p style='font-family:Lato, Black;text-align:center;font-size:15px;color:#063A54;'>Inserisci le tue credenziali per effettuare l'accesso</p>");
 
 
 echo elgg_view_field([

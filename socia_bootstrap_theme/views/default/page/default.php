@@ -73,23 +73,11 @@ echo elgg_view("page/elements/html", $params);
 
 }/***********************************************************************for login and registration page*/
 else{
-    //echo elgg_echo("I am login form!");
-
-    $messages = elgg_view('page/elements/messages', array('object' => $vars['sysmessages']));
 
     $header = elgg_view('page/elements/header_entry', $vars);
-    $navbar = elgg_view('page/elements/navbar', $vars);
     $content = elgg_view('page/elements/body', $vars);
     $footer = elgg_view('page/elements/footer', $vars);
     
-// $body = <<<__BODY
-// <div class="elgg-page elgg-page-default">
-//     <div class="elgg-page-messages">
-//         $messages
-//     </div>
-// __BODY;
-    
-// $body .= elgg_view('page/elements/topbar_wrapper', $vars);
 
 $body .= <<<__BODY
     <div class="" style="margin-top: -7px;">

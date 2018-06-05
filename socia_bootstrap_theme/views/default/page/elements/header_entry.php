@@ -38,8 +38,23 @@
 // }
 ?>
     <!-- <div class="col-md-12" style='left: 0px; top: 0px; max-width:100%; height:8px; border: 2px solid green;'> -->
-        <?php //echo elgg_echo("<img style='height: 8px; width: 100%; object-fit: contain' src='{$vars['url']}mod/socia_bootstrap_theme/assets/images/headerImage.png' / >");
-            echo "<img style='left:0; height: 8px; width: 100%;' src='{$vars['url']}mod/socia_bootstrap_theme/assets/images/headerImage.png' / >";
-        ?>
-    <!-- </div> -->
+    
+        
+    <?php 
+        echo elgg_echo("<img style='height: 8px; width: 100%; ' src='{$vars['url']}mod/socia_bootstrap_theme/assets/images/headerImage.png' / >");
+    ?>
+        
+    
+    <div class="container" style="margin-top: 50px;">
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4">
+                <?php 
+                    //style='height: 56px; width: 211.45px;'
+                    echo elgg_echo("<img  src='{$vars['url']}mod/socia_bootstrap_theme/assets/images/infanziaLogo.png' />");
+                ?>
+            </div>
+            <div class="col-md-4"></div>
+        </div>
+    </div>
     <?php

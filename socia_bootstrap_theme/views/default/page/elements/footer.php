@@ -21,10 +21,40 @@
  * @link       http://socia.us
  */
 ?>
-<div class="footer">
+<style>
+hr { 
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: .5px;
+    border-color: #E1E4EA;
+} 
+#footer {
+   position:absolute;
+   bottom:0;
+   width:100%;
+   height:38.5px;   /* Height of the footer */
+}
+</style>
+<div class="footer" id="footer">
     <div class="container">
+        <div class='row'>
+            <hr>
+        </div>
+        <div class='row'>
+            <div class="col-md-4"></div>
+            <div class="col-md-4">
+                <span style='color: #063A54;'>©2018 Infanzia Digitales. Tutti i diritti riservati.</span>
+            </div>
+            <div class="col-md-4"></div>
+            
+        </div>
         <?php
-        echo elgg_view_menu('footer', array('sort_by' => 'priority', 'class' => 'elgg-menu-hz'));
+        //echo elgg_view_menu('footer', array('sort_by' => 'priority', 'class' => 'elgg-menu-hz'));
+        //echo "<div class='row'><span>©2018 Infanzia Digitales. Tutti i diritti riservati.</span></div>"
         ?>
     </div>
 </div>
