@@ -75,7 +75,7 @@ echo elgg_view("page/elements/html", $params);
 else{
 
     $header = elgg_view('page/elements/header_entry', $vars);
-    $content = elgg_view('page/elements/body', $vars);
+    $content = elgg_view('page/elements/bodyEntry', $vars);
     $footer = elgg_view('page/elements/footer', $vars);
     
 

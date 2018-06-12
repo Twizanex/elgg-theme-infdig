@@ -21,24 +21,6 @@
  * @link       http://socia.us
  */
 ?>
-<style>
-hr { 
-    display: block;
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
-    margin-left: auto;
-    margin-right: auto;
-    border-style: inset;
-    border-width: .5px;
-    border-color: #E1E4EA;
-} 
-#footer {
-   position:absolute;
-   bottom:0;
-   width:100%;
-   height:38.5px;   /* Height of the footer */
-}
-</style>
 <div class="footer" id="footer">
     <div class="container">
         <div class='row'>

@@ -325,3 +325,64 @@
         }
     }
 
+/***********custom all css in this plugin*************/
+
+
+body {
+    position: relative;
+    margin: 0;
+    padding-bottom: 6rem;
+    min-height: 100%;
+    font-family: Lato;
+    background-color: #F2F4F7 !important;
+}
+/* *** for footer *** */
+hr { 
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: .5px;
+    border-color: #E1E4EA;
+} 
+
+#footer {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width:100%;
+    height:38.5px;   
+    text-align: center;
+    /* padding: 1rem;
+    background-color: #efefef; */
+    
+}
+
+/* *** for navbar *** */
+.navbar.navbar-default.navbar-custom {
+    color: #FFFFFF !important;
+    background-color: #12839E;
+    /* background-repeat: no-repeat; */
+}
+.navbar-default .navbar-nav>li>a{
+    color: #FFFFFF !important;
+}
+.navbar-left>li>a{
+    color: #FFFFFF !important;
+}
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover{
+    background-color: transparent;
+    text-decoration: underline;
+}
+.navbar-nav.navbar-center {
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
+}
+/* .elgg-page-body {
+padding: 0 20px;
+background: #F2F4F7;
+} */

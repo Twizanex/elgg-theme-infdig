@@ -20,28 +20,9 @@
  * @version    1.2
  * @link       http://socia.us
  */
-// $site_name = elgg_get_site_entity()->name;
-// $url = elgg_get_site_url();
-// $logo_url = elgg_get_plugin_setting("image_path", "socia_bootstrap_theme");
-// if (!$logo_url) {
-//     ?>
-     <!-- <div class="col-md-12">
-         <a href="<?php //echo $url; ?>"><h1><?php //echo $site_name; ?></h1></a>
-     </div> -->
-     <?php
-// } else {
-//     ?>
-     <!-- <div class="col-md-12">
-         <a href="<?php //echo $url; ?>"><img src="<?php //echo $logo_url; ?>"/></a>
-     </div> -->
-     <?php
-// }
-?>
-    <!-- <div class="col-md-12" style='left: 0px; top: 0px; max-width:100%; height:8px; border: 2px solid green;'> -->
-    
         
     <?php 
-        echo elgg_echo("<img style='height: 8px; width: 100%; ' src='{$vars['url']}mod/socia_bootstrap_theme/assets/images/headerImage.png' / >");
+        echo elgg_echo("<img style='height: 12px; width: 100%; ' src='{$vars['url']}mod/socia_bootstrap_theme/assets/images/headerImage.png' / >");
     ?>
         
     
