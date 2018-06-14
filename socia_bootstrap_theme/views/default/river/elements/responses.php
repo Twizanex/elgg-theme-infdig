@@ -42,7 +42,7 @@ if ($comment_count) {
 	// make sure the comments know that this is viewed from the activity/river
 	elgg_push_context('activity');
 	
-	echo elgg_view_entity_list($comments, array('list_class' => 'elgg-river-comments'));
+	//echo elgg_view_entity_list($comments, array('list_class' => 'elgg-river-comments'));
 
 	// restore context
 	elgg_pop_context();
@@ -55,7 +55,7 @@ if ($comment_count) {
 			'is_trusted' => true,
 		);
 		$link = elgg_view('output/url', $params);
-		echo "<div class=\"elgg-river-more\">$link</div>";
+		//echo "<div class=\"elgg-river-more\">$link</div>";
 	}
 }
 

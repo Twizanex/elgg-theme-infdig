@@ -21,6 +21,7 @@ $menu = elgg_view_menu('river', array(
 // river item header
 $timestamp = elgg_view_friendly_time($item->getTimePosted());
 
+
 $summary = elgg_extract('summary', $vars);
 if ($summary === null) {
 	$summary = elgg_view('river/elements/summary', array(
@@ -64,12 +65,26 @@ if ($container instanceof ElggGroup && $container->guid != elgg_get_page_owner_g
 	));
 	$group_string = elgg_echo('river:ingroup', array($group_link));
 }
-
+/* count comment and make link */
+$comment_count = $object->countComments();
+if ($comment_count) {
+	if ($comment_count > 0) {
+		$url = $object->getURL();
+		$params = array(
+			'href' => $url,
+			'text' => elgg_echo('river:comments:all', array($comment_count)),
+			'is_trusted' => true,
+		);
+		$commentLink = elgg_view('output/url', $params);
+		//$link = "<div class=\"elgg-river-more\">$link</div>";
+	}
+}
+/* end count comment and make link */
 echo <<<RIVER
 
 <div class="elgg-river-summary">$summary $group_string </div>
 $message
-<span class="elgg-river-timestamp">$timestamp</span>
+<span class="elgg-river-timestamp">$timestamp</span>$commentLink
 $menu
 $attachments
 $responses

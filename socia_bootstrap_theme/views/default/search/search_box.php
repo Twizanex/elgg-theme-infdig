@@ -56,13 +56,13 @@ $search_attrs = elgg_format_attributes(array(
         ));
 ?>
 
-<form class="<?php echo $class; ?>" action="<?php echo elgg_get_site_url(); ?>search" method="get">
+<!-- <form class="<?php //echo $class; ?>" action="<?php //echo elgg_get_site_url(); ?>search" method="get">
     <div class="form-group">
-        <input placeholder="<?php echo $placeholder; ?>" <?php echo $search_attrs; ?> />
-        <!--<input type="hidden" name="search_type" value="all" />-->
+        <input placeholder="<?php //echo $placeholder; ?>" <?php //echo $search_attrs; ?> />
+        
     </div>
-    <button type="submit" class="btn btn-info"><?php echo elgg_echo('search:go'); ?></button>
-</form>
+    <button type="submit" class="btn btn-info"><?php //echo elgg_echo('search:go'); ?></button>
+</form> -->
 
 
 

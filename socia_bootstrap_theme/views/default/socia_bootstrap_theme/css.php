@@ -334,7 +334,12 @@ body {
     padding-bottom: 6rem;
     min-height: 100%;
     font-family: Lato;
+    color: #063A54;
     background-color: #F2F4F7 !important;
+}
+a{
+    color: #063A54;
+    font-weight: bold;
 }
 /* *** for footer *** */
 hr { 
