@@ -366,7 +366,7 @@ hr {
     
 }
 
-/* *** for navbar *** */
+/* *** for navbar header*** */
 .navbar.navbar-default.navbar-custom {
     color: #FFFFFF !important;
     background-color: #12839E;
@@ -391,3 +391,36 @@ hr {
 padding: 0 20px;
 background: #F2F4F7;
 } */
+
+/* *** for nav tabs *** */
+.nav-tabs {
+    border-bottom: 4px solid #033046;
+    
+}
+
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover{
+    color: #fff;
+    background-color: #033046;
+}
+.nav-tabs>li>a {
+    margin-right: 0px;
+    color: #063A54;
+    background-color: #FFFFFF;
+    border: 1px solid #8EA5B1;
+}
+
+.elgg-river-layout .elgg-list-river {
+    border-top: 0px solid #DCDCDC;
+}
+
+.elgg-list {
+    margin: 0px 0;
+    /* margin-left: 2px; */
+    border: 1px solid #8EA5B1;
+    background-color: #FFFFFF;
+    border-radius: 0px 0px 8px 8px;
+    box-shadow: 0px 7px 24px #d5dde1;
+}
+.elgg-list > li {
+    border-bottom: 1px solid #E1E4EA;
+}

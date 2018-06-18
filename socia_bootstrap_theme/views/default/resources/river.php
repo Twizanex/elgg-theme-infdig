@@ -58,14 +58,14 @@ if (!$activity) {
 	$activity = elgg_echo('river:none');
 }
 
-$content = elgg_view('core/river/filter', array('selector' => $selector));
+$content_filter = elgg_view('core/river/filter', array('selector' => $selector));
 
 $sidebar = elgg_view('core/river/sidebar');
 
 $params = array(
-	'title' => $title . $content,
+	'title' => $title . $content_filter,
 	'content' =>  $activity,
-	'sidebar' => $sidebar,
+	// 'sidebar' => $sidebar,
 	'filter_context' => $page_filter,
 	'class' => 'elgg-river-layout',
 );
