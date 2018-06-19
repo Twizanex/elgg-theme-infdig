@@ -52,7 +52,28 @@ if (!$navbar_style) {
                 ?>
             </ul><!-- /.navbar-collapse -->
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="#"><span class="fas fa-user-circle"></span> Name</a></li>
+                <?php
+                    $user = elgg_get_logged_in_user_entity();
+                    if (!$user) {
+                        throw new InvalidParameterException('registration:usernamenotvalid');
+                    }
+                    $username = $user->username;
+                    $userProfileIcon = getProfileIcon($user);
+                    /* *** *** *** */
+                    
+                    /* *** *** *** */
+                ?>
+                <li class="dropdown">
+                    <a href="#" class='dropdown-toggle' data-toggle='dropdown' role='button'>
+                        <img src="<?php echo $userProfileIcon; ?>" style="border-radius: 50%;" alt="Avatar" width="30" height="30"> 
+                        <?php echo $username; ?>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Account</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">Logout</a></li>
+                    </ul>
+                </li>
             </ul
         
     </div>

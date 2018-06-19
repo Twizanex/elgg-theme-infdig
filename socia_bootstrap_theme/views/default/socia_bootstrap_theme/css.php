@@ -369,7 +369,7 @@ hr {
 /* *** for navbar header*** */
 .navbar.navbar-default.navbar-custom {
     color: #FFFFFF !important;
-    background-color: #12839E;
+    background-color: #CC1962;
     /* background-repeat: no-repeat; */
 }
 .navbar-default .navbar-nav>li>a{
