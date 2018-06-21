@@ -391,11 +391,19 @@ hr {
 padding: 0 20px;
 background: #F2F4F7;
 } */
+ul.nav.navbar-nav.navbar>li.elgg-menu-item-blog{
+    display: none;
+}
 
 /* *** for nav tabs *** */
 .nav-tabs {
     border-bottom: 4px solid #033046;
     
+}
+.nav-tabs>li{
+    min-width: 147px;
+    min-height: 40px;
+    text-align: center;
 }
 
 .nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover{

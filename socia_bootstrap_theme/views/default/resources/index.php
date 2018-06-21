@@ -55,7 +55,7 @@ elgg_pop_context();
 
 // lay out the content
 $vars = array(
-	'blogs' => $blogs,
+	//'blogs' => $blogs,
 	'bookmarks' => $bookmarks,
 	'files' => $files,
 	'groups' => $groups,

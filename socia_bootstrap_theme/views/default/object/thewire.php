@@ -22,7 +22,10 @@ if (!$thread_id) {
 
 $owner = $post->getOwnerEntity();
 
-$owner_icon = elgg_view_entity_icon($owner, 'tiny');
+//$owner_icon = elgg_view_entity_icon($owner, 'tiny');
+$user = elgg_get_logged_in_user_entity();
+$icone=getProfileIcon($user);
+$owner_icon = "<img src='$icone' style='border-radius: 50%;'' alt='Avatar' width='30' height='30'> ";
 $owner_link = elgg_view('output/url', array(
     'href' => "thewire/owner/$owner->username",
     'text' => $owner->name,

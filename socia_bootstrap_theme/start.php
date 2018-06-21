@@ -66,6 +66,17 @@ function socia_bootstrap_theme_init() {
     }
 
     elgg_register_plugin_hook_handler('register', 'menu:title', 'socia_title_menu');
+
+    /**            hide the More option in menu    **** */
+    elgg_unregister_plugin_hook_handler('prepare', 'menu:site', '_elgg_site_menu_setup');
+    elgg_register_menu_item('site', array(
+        'name' => 'thewire',
+        'text' => elgg_echo('Aggiornamenti di stato'),
+        'href' => 'thewire/all'
+    ));
+    // elgg_unregister_plugin_hook_handler('register', 'menu:entity', 'elgg_entity_menu_setup');
+    // elgg_register_plugin_hook_handler('register', 'menu:entity', 'blog_setup_entity_menu_items');
+    
 }
 
 function socia_available_themes($return_labels = true) {
@@ -237,4 +248,34 @@ if (!function_exists("elgg_extract_class")) {
         return array_values(array_unique($existing));
     }
 
+}
+
+
+function blog_setup_entity_menu_items($hook, $type, $value, $params) {
+    $handler = elgg_extract('handler', $params, false);
+    if ($handler != 'blog') {
+        return $value;
+    }
+
+    foreach ($value as $index => $item) {
+        $name = $item->getName();
+        if ($name == 'access' || $name == 'delete' || $name == 'likes') {
+            unset($value[$index]);
+        }
+    }
+
+    $entity = $params['entity'];
+
+   if ($entity->canEdit() && $handler) {
+        // edit link
+        $options = array(
+            'name' => 'edit',
+            'text' => elgg_echo('edit'),
+            'href' => "$handler/edit/{$entity->getGUID()}",
+            'priority' => 100,
+        );
+        $value[] = ElggMenuItem::factory($options);
+    }
+
+    return $value;
 }
