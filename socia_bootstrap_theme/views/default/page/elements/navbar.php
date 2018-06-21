@@ -33,7 +33,7 @@ $url = elgg_get_site_url();
     <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
         <ul class="navbar-header navbar-left">
-            <li><a class="navbar-brand" href="<?php echo $url; ?>">  Rete </a></li>
+            <li><a class="navbar-brand" href="<?php echo $url; ?>" style="font-size:24px; line-height: 29px;">  Rete </a></li>
         </ul>
         <!-- Collect the nav links, forms, and other content for toggling -->
         <!-- <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1"> -->

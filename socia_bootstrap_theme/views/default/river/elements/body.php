@@ -67,6 +67,7 @@ if ($container instanceof ElggGroup && $container->guid != elgg_get_page_owner_g
 }
 /* count comment and make link */
 $comment_count = $object->countComments();
+$like_count = likes_count($object);
 if ($comment_count) {
 	if ($comment_count > 0) {
 		$url = $object->getURL();
@@ -84,7 +85,9 @@ echo <<<RIVER
 
 <div class="elgg-river-summary">$summary $group_string </div>
 $message
-<span class="elgg-river-timestamp">$timestamp</span>$commentLink
+<span class="elgg-river-timestamp">$timestamp</span>
+<span class="elgg-river-like">Piace a $like_count persone</span>
+<span class="elgg-river-comment">$comment_count Commenti</span>
 $menu
 $attachments
 $responses

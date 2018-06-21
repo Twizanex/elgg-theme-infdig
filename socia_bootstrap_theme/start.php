@@ -69,7 +69,12 @@ function socia_bootstrap_theme_init() {
 
     /**            hide the More option in menu    **** */
     elgg_unregister_plugin_hook_handler('prepare', 'menu:site', '_elgg_site_menu_setup');
-    elgg_register_menu_item('site', array(
+    // elgg_register_menu_item('site', array(
+    //     'name' => 'thewire',
+    //     'text' => elgg_echo('Aggiornamenti di stato'),
+    //     'href' => 'thewire/all'
+    // ));
+    elgg_register_menu_item('menu', array(
         'name' => 'thewire',
         'text' => elgg_echo('Aggiornamenti di stato'),
         'href' => 'thewire/all'

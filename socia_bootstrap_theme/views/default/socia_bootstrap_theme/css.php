@@ -325,8 +325,9 @@
         }
     }
 
+/*****************************************************/
 /***********custom all css in this plugin*************/
-
+/*****************************************************/
 
 body {
     position: relative;
@@ -368,19 +369,26 @@ hr {
 
 /* *** for navbar header*** */
 .navbar.navbar-default.navbar-custom {
+    font-family: 'Lato', sans-serif;
     color: #FFFFFF !important;
     background-color: #CC1962;
     /* background-repeat: no-repeat; */
 }
 .navbar-default .navbar-nav>li>a{
     color: #FFFFFF !important;
+    font-weight: normal;
+    line-height: 27px;
 }
 .navbar-left>li>a{
     color: #FFFFFF !important;
 }
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover{
     background-color: transparent;
-    text-decoration: underline;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-underline-position: under;
+    /* padding-bottom: 3px;
+    border-bottom: 1px solid #fff; */
 }
 .navbar-nav.navbar-center {
     position: absolute;
@@ -394,8 +402,15 @@ background: #F2F4F7;
 ul.nav.navbar-nav.navbar>li.elgg-menu-item-blog{
     display: none;
 }
-
-/* *** for nav tabs *** */
+/* ul.nav.navbar-nav.navbar>li.elgg-menu-item-thewire{
+    position: absolute;
+    visibility: hidden;
+}
+ul.nav.navbar-nav.navbar>li.elgg-menu-item-thewire:after {
+  content: 'Aggiornamenti di stato';
+  visibility: visible;
+} */
+/* ******************************************** for nav tabs **************************** */
 .nav-tabs {
     border-bottom: 4px solid #033046;
     
@@ -415,7 +430,11 @@ ul.nav.navbar-nav.navbar>li.elgg-menu-item-blog{
     color: #063A54;
     background-color: #FFFFFF;
     border: 1px solid #8EA5B1;
+    border-radius: 8px 8px 0 0;
 }
+
+
+/******************************************Elgg River ***********************************/
 
 .elgg-river-layout .elgg-list-river {
     border-top: 0px solid #DCDCDC;
@@ -431,4 +450,99 @@ ul.nav.navbar-nav.navbar>li.elgg-menu-item-blog{
 }
 .elgg-list > li {
     border-bottom: 1px solid #E1E4EA;
+}
+.elgg-avatar.elgg-avatar-small>a>img{
+    border-radius: 50%;
+}
+.elgg-body>.elgg-river-summary{
+    font-size: 13px;
+}
+.elgg-body>.elgg-river-attachments, .elgg-river-message, .elgg-river-content {
+    border-left: 0px solid #DCDCDC;
+    margin: 8px 0 5px 0;
+    padding-left: 0px;
+    font-size: 16px;
+}
+.elgg-body>.elgg-river-timestamp {
+    color: #063A54;
+    opacity: 0.6;
+    font-family: Lato, Regular;
+    font-size: 14px;
+    font-style: normal;
+    line-height: 14px;
+    padding-right: 44px;
+}
+.elgg-body>.elgg-river-like{
+    color: #063A54;
+    opacity: 0.6;
+    font-family: Lato, Regular;
+    font-size: 14px;
+    font-style: normal;
+    line-height: 14px;
+    padding-right: 44px;
+}
+.elgg-body>.elgg-river-comment{
+    color: #063A54;
+    opacity: 0.6;
+    font-family: Lato, Regular;
+    font-size: 14px;
+    font-style: normal;
+    line-height: 14px;
+    padding-right: 44px;
+}
+.elgg-menu.elgg-menu-river.elgg-menu-hz.elgg-menu-river-default>li.elgg-menu-item-comment>a>span:after{
+    content: "Commenta";
+    color: #063A54;
+    opacity: 1.0;
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: Bold;
+    line-height: 14px;
+    padding-right: 14px;
+    padding-left: 10px;
+}
+.elgg-menu.elgg-menu-river.elgg-menu-hz.elgg-menu-river-default>li.elgg-menu-item-likes>a>span:after{
+    content: "Mi Piace";
+    color: #063A54;
+    opacity: 1.0;
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: Bold;
+    line-height: 14px;
+    padding-right: 14px;
+    padding-left: 10px;
+}
+.elgg-menu.elgg-menu-river.elgg-menu-hz.elgg-menu-river-default>li.elgg-menu-item-unlike>a>span:after{
+    content: "Mi Piace";
+    color: #063A54;
+    opacity: 1.0;
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: Bold;
+    line-height: 14px;
+    padding-right: 14px;
+    padding-left: 10px;
+}
+.elgg-menu.elgg-menu-river.elgg-menu-hz.elgg-menu-river-default>li.elgg-menu-item-likes-count{
+    display: none;
+}
+.elgg-menu.elgg-menu-river.elgg-menu-hz.elgg-menu-river-default>li.elgg-menu-item-delete{
+    display: none;
+}
+/* ***********************************for font: Lato. *********************************/
+/* latin-ext */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v14/S6uyw4BMUTPHjxAwXjeu.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v14/S6uyw4BMUTPHjx4wXg.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }

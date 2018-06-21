@@ -865,7 +865,7 @@ When it is on, only admins can log in and browse the site.',
 	'groups' => 'Gruppi',
 	'members' => 'Membri',
 	'pages' => 'Pagine',
-	//'the_wire' => 'Aggiornamenti di stato',
+	'thewire' => 'Aggiornamenti di stato',
 	'menu' => 'Menu',
 
 	'up' => 'Su',
