@@ -23,9 +23,9 @@ if (!$thread_id) {
 $owner = $post->getOwnerEntity();
 
 //$owner_icon = elgg_view_entity_icon($owner, 'tiny');
-$user = elgg_get_logged_in_user_entity();
-$icone=getProfileIcon($user);
-$owner_icon = "<img src='$icone' style='border-radius: 50%;'' alt='Avatar' width='30' height='30'> ";
+  $user = elgg_get_logged_in_user_entity();
+  $icone=getProfileIcon($user);
+  $owner_icon = "<img src='$icone' style='border-radius: 50%;'' alt='Avatar' width='60' height='60'> ";
 $owner_link = elgg_view('output/url', array(
     'href' => "thewire/owner/$owner->username",
     'text' => $owner->name,
@@ -35,7 +35,7 @@ $author_text = elgg_echo('byline', array($owner_link));
 $date = elgg_view_friendly_time($post->time_created);
 
 $subtitle = "$author_text $date";
-
+//$subtitle = "$date";
 $metadata = '';
 if (!elgg_in_context('widgets')) {
     // only show entity menu outside of widgets
