@@ -433,6 +433,9 @@ ul.nav.navbar-nav.navbar>li.elgg-menu-item-thewire:after {
     border-radius: 8px 8px 0 0;
 }
 /******************************************All page ***********************************/
+.elgg-heading-main{
+    font-weight: bold;
+}
 .elgg-avatar.elgg-avatar-tiny>a>img{
     border-radius: 50%;
     width: 60px;
@@ -474,9 +477,25 @@ ul.nav.navbar-nav.navbar>li.elgg-menu-item-thewire:after {
     margin-left: 87%;
     width: 147px;
     height: 40px;
+    margin-bottom: 15px;
 }
-#cke_1_contents{
-    hight:150px !implements;
+.elgg-head.clearfix>.elgg-menu.elgg-menu-title.elgg-menu-hz.elgg-menu-title-default>.elgg-menu-item-add>.elgg-menu-content.btn.btn-warning{
+    color: #fff;
+    background-color: #063A54;
+    border-color: #063A54;
+    /* margin-left: 87%; */
+    width: 147px;
+    height: 40px;
+    margin-bottom: 15px;
+}
+#cke_thewire-textarea{
+    /* height:100px; */
+}
+.form-group>#cke_thewire-textarea>.cke_inner.cke_reset>#cke_1_contents{
+    hight:100px !important;
+}
+.elgg-menu.elgg-menu-longtext.elgg-menu-hz.elgg-menu-longtext-default>li.elgg-menu-item-ckeditor-toggler>a.elgg-menu-content.ckeditor-toggle-editor.elgg-longtext-control{
+    display: none !important;
 }
 /******************************************Elgg River ***********************************/
 .elgg-image-block .elgg-image {
