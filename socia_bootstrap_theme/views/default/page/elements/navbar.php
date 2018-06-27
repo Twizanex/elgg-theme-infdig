@@ -14,11 +14,10 @@
  * send a note to license@php.net so we can mail you a copy immediately.
  *
  * @category   Elgg Themes
- * @author     Shane Barron <admin@socia.us>
+ * @author     Nur Alam
  * @copyright  2017 SocialApparatus
  * @license    http://www.php.net/license/3_01.txt  PHP License 3.01
- * @version    1.2
- * @link       http://socia.us
+ * @version    1.0
  */
 ?>
 
@@ -61,17 +60,21 @@ $url = elgg_get_site_url();
             <?php
                 $user = elgg_get_logged_in_user_entity();
                 if (!$user) {
-                    throw new InvalidParameterException('registration:usernamenotvalid');
+                    //throw new InvalidParameterException('registration:usernamenotvalid');
+                    $username = "UserName";
+                    $userProfileIcon = "{$vars['url']}mod/socia_bootstrap_theme/assets/images/user.png";
+                }else{
+                    $username = $user->username;
+                    $userProfileIcon = getProfileIcon($user);
                 }
-                $username = $user->username;
-                $userProfileIcon = getProfileIcon($user);
+                
                 /* *** *** *** */
                 
                 /* *** *** *** */
             ?>
             <li class="dropdown">
                 <a href="#" class='dropdown-toggle' data-toggle='dropdown' role='button'>
-                    <img src="<?php echo $userProfileIcon; ?>" style="border-radius: 50%; margin-right: 10px;" alt="Avatar" width="30" height="30"> 
+                    <img src="<?php echo elgg_echo($userProfileIcon); ?>" style="border-radius: 50%; margin-right: 10px;" alt="Avatar" width="30" height="30"> 
                     <?php echo $username; ?>
                 </a>
                 <ul class="dropdown-menu">

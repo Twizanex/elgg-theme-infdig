@@ -14,13 +14,12 @@
  * send a note to license@php.net so we can mail you a copy immediately.
  *
  * @category   Elgg Themes
- * @author     Shane Barron <admin@socia.us>
+ * @author     Nur Alam
  * @copyright  2017 SocialApparatus
  * @license    http://www.php.net/license/3_01.txt  PHP License 3.01
- * @version    1.2
- * @link       http://socia.us
+ * @version    1.0
  */
-        
+?>     
     <?php 
         echo elgg_echo("<img style='height: 12px; width: 100%; ' src='{$vars['url']}mod/socia_bootstrap_theme/assets/images/headerImage.png' / >");
     ?>

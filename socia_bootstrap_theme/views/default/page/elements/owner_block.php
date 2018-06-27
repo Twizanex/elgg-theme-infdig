@@ -15,12 +15,12 @@
  * send a note to license@php.net so we can mail you a copy immediately.
  *
  * @category   Elgg Themes
- * @author     Shane Barron <admin@socia.us>
+ * @author     Nur Alam
  * @copyright  2017 SocialApparatus
  * @license    http://www.php.net/license/3_01.txt  PHP License 3.01
- * @version    1.2
- * @link       http://socia.us
+ * @version    1.0
  */
+
 elgg_push_context('owner_block');
 
 // groups and other users get owner block

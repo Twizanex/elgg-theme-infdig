@@ -254,33 +254,3 @@ if (!function_exists("elgg_extract_class")) {
     }
 
 }
-
-
-function blog_setup_entity_menu_items($hook, $type, $value, $params) {
-    $handler = elgg_extract('handler', $params, false);
-    if ($handler != 'blog') {
-        return $value;
-    }
-
-    foreach ($value as $index => $item) {
-        $name = $item->getName();
-        if ($name == 'access' || $name == 'delete' || $name == 'likes') {
-            unset($value[$index]);
-        }
-    }
-
-    $entity = $params['entity'];
-
-   if ($entity->canEdit() && $handler) {
-        // edit link
-        $options = array(
-            'name' => 'edit',
-            'text' => elgg_echo('edit'),
-            'href' => "$handler/edit/{$entity->getGUID()}",
-            'priority' => 100,
-        );
-        $value[] = ElggMenuItem::factory($options);
-    }
-
-    return $value;
-}
