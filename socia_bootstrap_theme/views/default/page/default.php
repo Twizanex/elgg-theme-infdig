@@ -20,6 +20,18 @@
  * @license    http://www.php.net/license/3_01.txt  PHP License 3.01
  * @version    1.0
  */
+/**
+ * Elgg pageshell
+ * The standard HTML page shell that everything else fits into
+ *
+ * @package Elgg
+ * @subpackage Core
+ *
+ * @uses $vars['head']        Parameters for the <head> element
+ * @uses $vars['body_attrs']  Attributes of the <body> tag
+ * @uses $vars['body']        The main content of the page
+ * @uses $vars['sysmessages'] A 2d array of various message registers, passed from system_messages()
+ */
 if (elgg_get_context() != 'login' && elgg_get_context()!= 'register') {
 
 $messages = elgg_view('page/elements/messages', array('object' => $vars['sysmessages']));
