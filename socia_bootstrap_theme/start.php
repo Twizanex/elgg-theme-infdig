@@ -74,11 +74,11 @@ function socia_bootstrap_theme_init() {
     //     'text' => elgg_echo('Aggiornamenti di stato'),
     //     'href' => 'thewire/all'
     // ));
-    elgg_register_menu_item('menu', array(
-        'name' => 'thewire',
-        'text' => elgg_echo('Aggiornamenti di stato'),
-        'href' => 'thewire/all'
-    ));
+    // elgg_register_menu_item('menu', array(
+    //     'name' => 'thewire',
+    //     'text' => elgg_echo('Aggiornamenti di stato'),
+    //     'href' => 'thewire/all'
+    // ));
     // elgg_unregister_plugin_hook_handler('register', 'menu:entity', 'elgg_entity_menu_setup');
     // elgg_register_plugin_hook_handler('register', 'menu:entity', 'blog_setup_entity_menu_items');
     

@@ -327,10 +327,12 @@
 /*****************************************************/
 /***********custom all css in this plugin*************/
 /*****************************************************/
-
-body {
+html{
+    min-height:100%;
     position: relative;
-    margin: 0;
+}
+body {
+    margin:0 0 36px 0;
     padding-bottom: 6rem;
     min-height: 100%;
     font-family: Lato;
@@ -359,13 +361,21 @@ hr {
     bottom: 0;
     left: 0;
     width:100%;
-    height:38.5px;   
+    height: 36px;   
     text-align: center;
+    background-color: #FFFFFF !important;
     /* padding: 1rem;
     background-color: #efefef; */
     
 }
+#footer-text{
+    margin-top: 10px;
 
+}
+form.elgg-search.elgg-search-header{
+    visibility: hidden !important;
+    /* display: none; */
+}
 /* *** for navbar header*** */
 .navbar.navbar-default.navbar-custom {
     font-family: 'Lato', sans-serif;
@@ -434,6 +444,7 @@ ul.nav.navbar-nav.navbar>li.elgg-menu-item-thewire:after {
 /******************************************All page ***********************************/
 .elgg-heading-main{
     font-weight: bold;
+    font-size: 24px;
 }
 .elgg-avatar.elgg-avatar-tiny>a>img{
     border-radius: 50%;
