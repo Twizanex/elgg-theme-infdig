@@ -422,7 +422,6 @@ ul.nav.navbar-nav.navbar>li.elgg-menu-item-thewire:after {
 /* ******************************************** for nav tabs **************************** */
 .nav-tabs {
     border-bottom: 4px solid #033046;
-    
 }
 .nav-tabs>li{
     min-width: 147px;
@@ -433,13 +432,30 @@ ul.nav.navbar-nav.navbar>li.elgg-menu-item-thewire:after {
 .nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover{
     color: #fff;
     background-color: #033046;
+    border: 1px solid #033046;
 }
 .nav-tabs>li>a {
     margin-right: 0px;
     color: #063A54;
     background-color: #FFFFFF;
     border: 1px solid #8EA5B1;
-    border-radius: 8px 8px 0 0;
+    border-radius: 0 0 0 0;
+    /* Only round the top corners */
+    /* -webkit-border-top-left-radius: 8px;
+    -webkit-border-top-right-radius: 8px;
+    -moz-border-radius-topleft: 8px;
+    -moz-border-radius-topright: 8px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px; */
+
+}
+.nav-tabs>li:first-child a{
+    /* border-top-left-radius: 8px; */
+    border-radius: 8px 0 0 0;
+}
+.nav-tabs>li:last-child a{
+    /* border-top-right-radius: 8px; */
+    border-radius: 0 8px 0 0;
 }
 /******************************************All page ***********************************/
 .elgg-heading-main{
