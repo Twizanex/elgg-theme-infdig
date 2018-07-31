@@ -524,6 +524,38 @@ ul.nav.navbar-nav.navbar>li.elgg-menu-item-thewire:after {
     display: none !important;
 }
 /******************************************Elgg River ***********************************/
+/*header and combo box in one line*/
+.elgg-river-layout>.elgg-head.clearfix>.elgg-heading-main>.clearfix{
+    display: inline-block;
+    overflow: hidden;
+    float:right;
+    border: 1px solid aqua;
+}
+.elgg-river-layout>.elgg-head.clearfix>.elgg-heading-main>.clearfix>.elgg-river-selector>span{
+    float: left;
+    font-size: 14px;
+    padding-top: 13px;
+    font-family: Lato, Regular;
+}
+.elgg-river-layout>.elgg-head.clearfix>.elgg-heading-main>.clearfix>.elgg-river-selector>.form-group{
+    float: right;
+    width: 244px;
+    height: 40px;
+    margin-bottom: 0px;
+}
+#elgg-river-selector{
+    height: 40px;
+}
+.elgg-river-layout>.elgg-head.clearfix>.elgg-heading-main{
+    overflow: hidden;
+    border: 1px solid red;
+    margin-bottom: 107px;
+}
+.elgg-river-layout .elgg-river-selector{
+    margin: 0px;
+}
+/* END */
+
 .elgg-image-block .elgg-image {
     padding-left:5px;
 }
