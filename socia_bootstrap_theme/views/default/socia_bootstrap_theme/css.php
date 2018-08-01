@@ -20,7 +20,7 @@
  * @version    1.0
  */
 ?>
-/* <style> /**/
+<style> /**/
 
 
     .elgg-widget-content {
@@ -464,8 +464,11 @@ ul.nav.navbar-nav.navbar>li.elgg-menu-item-thewire:after {
 }
 .elgg-avatar.elgg-avatar-tiny>a>img{
     border-radius: 50%;
-    width: 60px;
-    height: 60px;
+    width: 32px;
+    height: 32px;
+}
+.elgg-river-attachments .elgg-icon-arrow-right {
+    margin: 8px 8px 0;
 }
 .elgg-image>a>img{
     border-radius: 50%;
@@ -529,12 +532,13 @@ ul.nav.navbar-nav.navbar>li.elgg-menu-item-thewire:after {
     display: inline-block;
     overflow: hidden;
     float:right;
-    border: 1px solid aqua;
+    /* border: 1px solid aqua; */
+    margin-top: -4px;
 }
 .elgg-river-layout>.elgg-head.clearfix>.elgg-heading-main>.clearfix>.elgg-river-selector>span{
     float: left;
-    font-size: 14px;
     padding-top: 13px;
+    font-size: 14px;
     font-family: Lato, Regular;
 }
 .elgg-river-layout>.elgg-head.clearfix>.elgg-heading-main>.clearfix>.elgg-river-selector>.form-group{
@@ -545,17 +549,72 @@ ul.nav.navbar-nav.navbar>li.elgg-menu-item-thewire:after {
 }
 #elgg-river-selector{
     height: 40px;
+    color: #063A54;
+    border-color: #063A54;
 }
 .elgg-river-layout>.elgg-head.clearfix>.elgg-heading-main{
     overflow: hidden;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     margin-bottom: 107px;
+    padding-top: 10px;
 }
 .elgg-river-layout .elgg-river-selector{
-    margin: 0px;
+    margin: 0px 5px;
 }
-/* END */
+    /* remove the original arrow */
+    select{
+        /* -webkit-appearance: none;
+        -moz-appearance: none;
+        -o-appearance: none;
+        appearance: none;  */
+        /* background-color: #92ceea!important; */
+     }
 
+    select::-ms-expand {
+        /* display: none; */
+    }
+
+    select + i.fa {
+        /* float: right;
+        margin-top: -26px;
+        margin-right: 10px; */
+        /* this is so when you click on the chevron, your click actually goes on the dropdown menu */
+        /* pointer-events: none; */
+        /* everything after this is just to cover up the original arrow */
+        /* (for browsers that don't support the syntax used above) */
+        /* background-color: transparent;
+        color:black!important;
+        padding-right: 5px; */
+    }
+
+   select option{
+       /* padding-right: 21px; */
+   }
+/* END */
+/***************************pagination************************/
+.pagination{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+.pagination>li {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+.pagination>li>a, .pagination>li>span {
+    color : #063A54;
+}
+.pagination>.active>a, .pagination>.active>a:focus, .pagination>.active>a:hover, .pagination>.active>span, .pagination>.active>span:focus, .pagination>.active>span:hover {
+    z-index: 3;
+    color: #fff;
+    cursor: default;
+    background-color: #033046;
+    border-color: #033046;
+}
+/*END*/
 .elgg-image-block .elgg-image {
     padding-left:5px;
 }
@@ -672,3 +731,5 @@ ul.nav.navbar-nav.navbar>li.elgg-menu-item-thewire:after {
   src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v14/S6uyw4BMUTPHjx4wXg.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
+
+</style>
