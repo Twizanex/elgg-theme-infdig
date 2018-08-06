@@ -467,6 +467,11 @@ ul.nav.navbar-nav.navbar>li.elgg-menu-item-thewire:after {
     width: 32px;
     height: 32px;
 }
+.elgg-image>.elgg-avatar.elgg-avatar-tiny>a>img{
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+}
 .elgg-river-attachments .elgg-icon-arrow-right {
     margin: 8px 8px 0;
 }
@@ -614,10 +619,19 @@ ul.nav.navbar-nav.navbar>li.elgg-menu-item-thewire:after {
     background-color: #033046;
     border-color: #033046;
 }
-/*END*/
+/*END pagination*/
+/*elgg-body padding */
 .elgg-image-block .elgg-image {
-    padding-left:5px;
+    /* padding-left:5px; */
+    margin-right: 0px;
 }
+.elgg-image-block {
+    padding: 24px 18px 20px 18px;
+}
+.elgg-body{
+    padding-left: 18px;
+}
+/*END */
 .elgg-avatar.elgg-avatar-small>a>img{
     border-radius: 50%;
     width: 60px;
