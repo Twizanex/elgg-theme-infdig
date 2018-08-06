@@ -620,7 +620,7 @@ ul.nav.navbar-nav.navbar>li.elgg-menu-item-thewire:after {
     border-color: #033046;
 }
 /*END pagination*/
-/*elgg-body padding */
+/******************************elgg-body padding */
 .elgg-image-block .elgg-image {
     /* padding-left:5px; */
     margin-right: 0px;
@@ -632,6 +632,30 @@ ul.nav.navbar-nav.navbar>li.elgg-menu-item-thewire:after {
     padding-left: 18px;
 }
 /*END */
+/*************************card*/
+.panel-body {
+   padding: 0px;
+}
+.panel-default>.panel-heading {
+    color: #333;
+    background-color: #063A54;
+    border-color: #063A54;
+}
+.panel-title {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 18px;
+    color: #FFFFFF;
+}
+.elgg-widget-content {
+    padding: 0px;
+}
+.elgg-widget-title {
+    margin-left: 20px;
+    font-size: 18px;
+    color: #FFFFFF;
+}
+/*END Card*/
 .elgg-avatar.elgg-avatar-small>a>img{
     border-radius: 50%;
     width: 60px;
