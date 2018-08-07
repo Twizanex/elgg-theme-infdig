@@ -656,6 +656,18 @@ ul.nav.navbar-nav.navbar>li.elgg-menu-item-thewire:after {
     color: #FFFFFF;
 }
 /*END Card*/
+/**********************image in elgg-river-message*/
+.elgg-river-message>font{
+    float: left;
+    width: 50%;
+    padding: 5px;
+}
+.elgg-river-message>a{
+    float: left;
+    width: 50%;
+    padding: 5px;
+}
+/*END*/
 .elgg-avatar.elgg-avatar-small>a>img{
     border-radius: 50%;
     width: 60px;
