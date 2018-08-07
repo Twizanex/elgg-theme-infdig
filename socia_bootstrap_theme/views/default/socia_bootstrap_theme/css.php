@@ -668,6 +668,87 @@ ul.nav.navbar-nav.navbar>li.elgg-menu-item-thewire:after {
     padding: 5px;
 }
 /*END*/
+/**********************circle of the avatar image in profile*/
+.elgg-avatar-large > a > img{
+    border-radius: 50%;
+}
+/*END*/
+/********************************************Dropdown menu*/
+/* caret style */
+.caret {
+  position: relative;
+}
+
+/* dropdown style */
+.dropdown.open .caret:before,
+.dropdown.open .caret:after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 0;
+  border-width: 7px 8px;
+  border-style: solid;
+  border-color: transparent;
+  z-index: 1001;
+}
+.dropdown.open .caret:before {
+  bottom: -17px;
+  right: -8px;
+  border-bottom-color: #ccc;
+}
+.dropdown.open .caret:after {
+  bottom: -18px;
+  right: -8px;
+  border-bottom-color: #fff;
+}
+
+/* navbar style */
+.navbar-nav > li > .dropdown-menu {
+  /* border-top-left-radius: 4px;
+  border-top-right-radius: 4px; */
+  border-radius: 6px;
+  border: 1px solid #8EA5B1;
+  box-shadow: 0 6px 12px #CDD2DB;
+}
+.navbar-nav > .open > a .caret:before {
+  bottom: -23px;
+}
+.navbar-nav > .open > a .caret:after {
+  bottom: -24px;
+}
+.caret {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: 15px;
+    vertical-align: middle;
+    border-top: 14px dashed;
+    border-right: 8px solid transparent;
+    border-left: 8px solid transparent;
+}
+.dropdown-menu .divider {
+    height: 1px;
+    margin: 9px 0;
+    overflow: hidden;
+    background-color: #8EA5B1;
+}
+.dropdown-menu>li>a {
+    font-size: 15px;
+    color: #063A54;
+    font-family: Lato, Bold;
+}
+.dropdown-menu>li: hover {
+    display: block;
+    background-color:#D9E1E5;
+}
+.dropdown.open .caret:before, .dropdown.open .caret:after {
+    border-width: 12px 8px;
+}
+.navbar-nav > .open > a .caret:after {
+    bottom: -25px;
+}
+/*END*/
 .elgg-avatar.elgg-avatar-small>a>img{
     border-radius: 50%;
     width: 60px;

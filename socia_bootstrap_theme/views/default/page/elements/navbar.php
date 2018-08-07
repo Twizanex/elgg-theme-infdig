@@ -76,6 +76,7 @@ $url = elgg_get_site_url();
                 <a href="#" class='dropdown-toggle' data-toggle='dropdown' role='button'>
                     <img src="<?php echo elgg_echo($userProfileIcon); ?>" style="border-radius: 50%; margin-right: 10px;" alt="Avatar" width="30" height="30"> 
                     <?php echo $username; ?>
+                    <span class="caret"></span>
                 </a>
                 <ul class="dropdown-menu">
                     <li><a href="#">Account</a></li>
