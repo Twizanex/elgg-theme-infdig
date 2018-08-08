@@ -555,7 +555,7 @@ ul.nav.navbar-nav.navbar>li.elgg-menu-item-thewire:after {
 #elgg-river-selector{
     height: 40px;
     color: #063A54;
-    border-color: #063A54;
+    border-color: #b4c3cb;
 }
 .elgg-river-layout>.elgg-head.clearfix>.elgg-heading-main{
     overflow: hidden;
@@ -668,12 +668,8 @@ ul.nav.navbar-nav.navbar>li.elgg-menu-item-thewire:after {
     padding: 5px;
 }
 /*END*/
-/**********************circle of the avatar image in profile*/
-.elgg-avatar-large > a > img{
-    border-radius: 50%;
-}
-/*END*/
-/********************************************Dropdown menu*/
+
+/********************************************Dropdown menu*************************/
 /* caret style */
 .caret {
   position: relative;
@@ -729,7 +725,7 @@ ul.nav.navbar-nav.navbar>li.elgg-menu-item-thewire:after {
 }
 .dropdown-menu .divider {
     height: 1px;
-    margin: 9px 0;
+    margin: 4px 0;
     overflow: hidden;
     background-color: #8EA5B1;
 }
@@ -737,10 +733,16 @@ ul.nav.navbar-nav.navbar>li.elgg-menu-item-thewire:after {
     font-size: 15px;
     color: #063A54;
     font-family: Lato, Bold;
+    font-weight: bold;
 }
-.dropdown-menu>li: hover {
+/* .dropdown-menu>li: hover {
     display: block;
     background-color:#D9E1E5;
+} */
+.dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover {
+    color: #063A54;
+    text-decoration: none;
+    background-color: #D9E1E5;
 }
 .dropdown.open .caret:before, .dropdown.open .caret:after {
     border-width: 12px 8px;
@@ -749,6 +751,48 @@ ul.nav.navbar-nav.navbar>li.elgg-menu-item-thewire:after {
     bottom: -25px;
 }
 /*END*/
+/***********************************profile**************/
+#profile-owner-block {
+    width: 200px;
+    float: left;
+    background-color: #eee;
+    padding: 0px;
+}
+/*circle of the avatar image in profile*/
+.elgg-avatar-large > a > img{
+    border-radius: 50%;
+}
+/*end*/
+/*Menu*/
+.elgg-menu.profile-action-menu.mvm > li > a {
+    display: block;
+    white-space: normal;
+    margin: 2px;
+    background-color: transparent;
+    border-color: transparent;
+    color: #063A54;
+    font-size: 15px;
+    font-family: Lato, Bold;
+    font-weight: bold;
+    text-align: left;
+}
+.elgg-menu.profile-action-menu.mvm > li > a:hover {
+    background-color: #F2F4F7;
+    width:100%;
+}
+.nav.nav-pills.nav-stacked> li > a:hover {
+    background-color: #F2F4F7;
+    width:100%;
+}
+.elgg-image-alt>a{
+    background-color: #063A54;
+    border-color: #063A54;
+}
+.elgg-widget-add-control>a{
+    background-color: #063A54;
+    border-color: #063A54;
+}
+/********END********/
 .elgg-avatar.elgg-avatar-small>a>img{
     border-radius: 50%;
     width: 60px;
