@@ -15,11 +15,10 @@
  * send a note to license@php.net so we can mail you a copy immediately.
  *
  * @category   Elgg Themes
- * @author     Shane Barron <admin@socia.us>
+ * @author     NurAlam
  * @copyright  2017 SocialApparatus
  * @license    http://www.php.net/license/3_01.txt  PHP License 3.01
  * @version    1.2
- * @link       http://socia.us
  */
 elgg_register_event_handler('init', 'system', 'socia_bootstrap_theme_init');
 
@@ -55,6 +54,8 @@ function socia_bootstrap_theme_init() {
     }
 
     elgg_extend_view('elgg.css', 'socia_bootstrap_theme/css');
+    // elgg_extend_view('elgg.css', 'socia_bootstrap_theme/fontawesome.css');
+    //elgg_extend_view('elgg.css', 'http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css');
     elgg_register_event_handler('pagesetup', 'system', 'socia_bootstrap_theme_pagesetup', 1000);
 
     elgg_unextend_view('page/elements/header', 'search/header');
